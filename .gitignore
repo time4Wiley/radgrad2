@@ -12,7 +12,7 @@ custom
 
 # Private information
 realdata/
-app/private/database/production
+private/database/production
 
 # NPM
 node_modules
@@ -22,9 +22,9 @@ npm-debug.*
 settings.production.*
 
 # Javascript
-app/*.js
-app/*.js.map
-app/*.jsx
+*.js
+*.js.map
+*.jsx
 
 # testing outputs
 tests_output/
@@ -34,6 +34,23 @@ chromedriver.log
 api-docs
 
 # MUP deploy files containing passwords
-app/.deploy/mup.js
-app/.deploy/settings.json
+.deploy/mup.js
+.deploy/settings.json
 
+# Created by https://www.toptal.com/developers/gitignore/api/meteorjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=meteorjs
+
+### MeteorJS ###
+# default meteor build and local packages
+.meteor/local
+
+# meteor settings file
+settings.json
+
+# meteor build output files
+*.tar.gz
+
+# general swp files from vim
+*.swp
+
+# End of https://www.toptal.com/developers/gitignore/api/meteorjs
